@@ -5,7 +5,6 @@ $params = $_GET;
 // 首先加载session类
 include_once LIB_PATH . 'session' . EXT;
 new Session;
-Session::set('name', 'admin');
 
 // 得到默认的Controller
 $params['c'] = isset($params['c']) ? $params['c'] : 'nice';
